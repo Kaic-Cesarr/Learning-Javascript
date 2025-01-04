@@ -134,15 +134,38 @@
 
 
 // Condicionais
-var userOnline = false;
+// var userOnline = false;
 
-if(userOnline === true) {
-    console.log("Usuário online!");
-} else {
-    console.log("Usuário offline!");
-}
+// if(userOnline === true) {
+//     console.log("Usuário online!");
+// } else {
+//     console.log("Usuário offline!");
+// }
 
-// Operador ternário
-var isDriver = true;
+// // Operador ternário
+// var isDriver = true;
 
-isDriver === true ? console.log("É motorista") : console.log("Não é motorista");
+// isDriver === true ? console.log("É motorista") : console.log("Não é motorista");
+
+
+
+// Data local
+var data = new Date()
+console.log(data);
+
+console.log("Dia: " + data.getDate());
+console.log("Dia da semana: " + data.getDay());
+console.log("Mês: " + data.getMonth()+1)
+console.log("Ano: " + data.getFullYear())
+console.log("Hora atual: " + data.getHours());
+console.log("Minutos atual: " + data.getMinutes());
+
+console.log(data.getDate()+"/"+data.getMonth()+1+"/"+data.getFullYear());
+
+// Criando uma data
+var dataNova = new Date("March 22, 2018")
+console.log(dataNova)
+
+// Aumentar data, horarios...
+var newData = dataNova.setDate(dataNova.getDate() + 5);
+var newHour = dataNova.setHours(dataNova.getHours() + 10);
