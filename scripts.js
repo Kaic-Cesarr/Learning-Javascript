@@ -51,37 +51,54 @@
 
 
 // Arrays
-var lista = ['Steve', 'Mark', 'Bill', 120];
-console.log(lista);
-console.log(lista[0]);
-console.log(lista[2]);
+// var lista = ['Steve', 'Mark', 'Bill', 120];
+// console.log(lista);
+// console.log(lista[0]);
+// console.log(lista[2]);
 
-// Contar quantos elementos a lista possui
-console.log(lista.length); 
+// // Contar quantos elementos a lista possui
+// console.log(lista.length); 
 
-// Encontrar um elemento
-console.log(lista.indexOf('Bill'));
+// // Encontrar um elemento
+// console.log(lista.indexOf('Bill'));
 
-// Alterar o elemento
-lista[1] = "Zuckeberg"
-console.log(lista);
+// // Alterar o elemento
+// lista[1] = "Zuckeberg"
+// console.log(lista);
 
-lista[3] = 500;
-console.log(lista);
+// lista[3] = 500;
+// console.log(lista);
 
-// Adicionar elemento
-lista.push("Kaic");
-console.log(lista);
+// // Adicionar elemento
+// lista.push("Kaic");
+// console.log(lista);
 
-// Remover o primeiro elemento
-lista.shift();
-console.log(lista);
+// // Remover o primeiro elemento
+// lista.shift();
+// console.log(lista);
 
-// Remover o último elemento
-lista.pop();
-console.log(lista);
+// // Remover o último elemento
+// lista.pop();
+// console.log(lista);
 
-// Retornar todos os elementos mas separado por algo. Isso não altera a lista, somente a forma de exibição.
-console.log(lista.join(';'));
+// // Retornar todos os elementos mas separado por algo. Isso não altera a lista, somente a forma de exibição.
+// console.log(lista.join(';'));
 
 
+// Loops
+// var x = 0;
+
+// while(x < 10) {
+//     document.write("<br> O valor do X é: " + x);
+//     x++;
+// }
+
+for(i = 0; i < 10; i++) {
+    document.write("<br>  " + i);
+}
+
+var valor = 15
+
+for(i = 0; i < valor; i++) {
+    document.write("<br>  " + i);
+}
