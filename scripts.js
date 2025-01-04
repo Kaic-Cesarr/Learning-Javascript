@@ -86,19 +86,48 @@
 
 
 // Loops
-var x = 0;
+// var x = 0;
 
-while(x < 10) {
-    document.write("<br> O valor do X é: " + x);
-    x++;
-}
+// while(x < 10) {
+//     document.write("<br> O valor do X é: " + x);
+//     x++;
+// }
 
-for(i = 0; i < 10; i++) {
-    document.write("<br>  " + i);
-}
+// for(i = 0; i < 10; i++) {
+//     document.write("<br>  " + i);
+// }
 
-var valor = 15
+// var valor = 15
 
-for(i = 0; i < valor; i++) {
-    document.write("<br>  " + i);
+// for(i = 0; i < valor; i++) {
+//     document.write("<br>  " + i);
+// }
+
+
+// Switch
+
+function pedir() {
+    var valor = prompt("Digite um valor de 1 a 4");
+
+    switch(Number(valor)) {
+        case 1:
+            alert("Voce escolheu 1 = Suco");
+            break;
+
+        case 2:
+            alert("Voce escolheu 2 = Agua gelada");
+            break;
+
+        case 3:
+            alert("Voce escolheu 3 = Sorvete");
+            break;
+
+        case 4:
+            alert("Voce o garçom");
+            break;
+
+        default:
+            alert("Escolha uma opção entre 1 a 4.");
+            break
+    }
 }
