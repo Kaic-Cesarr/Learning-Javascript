@@ -86,12 +86,12 @@
 
 
 // Loops
-// var x = 0;
+var x = 0;
 
-// while(x < 10) {
-//     document.write("<br> O valor do X é: " + x);
-//     x++;
-// }
+while(x < 10) {
+    document.write("<br> O valor do X é: " + x);
+    x++;
+}
 
 for(i = 0; i < 10; i++) {
     document.write("<br>  " + i);
