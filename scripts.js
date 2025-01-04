@@ -106,28 +106,43 @@
 
 // Switch
 
-function pedir() {
-    var valor = prompt("Digite um valor de 1 a 4");
+// function pedir() {
+//     var valor = prompt("Digite um valor de 1 a 4");
 
-    switch(Number(valor)) {
-        case 1:
-            alert("Voce escolheu 1 = Suco");
-            break;
+//     switch(Number(valor)) {
+//         case 1:
+//             alert("Voce escolheu 1 = Suco");
+//             break;
 
-        case 2:
-            alert("Voce escolheu 2 = Agua gelada");
-            break;
+//         case 2:
+//             alert("Voce escolheu 2 = Agua gelada");
+//             break;
 
-        case 3:
-            alert("Voce escolheu 3 = Sorvete");
-            break;
+//         case 3:
+//             alert("Voce escolheu 3 = Sorvete");
+//             break;
 
-        case 4:
-            alert("Voce o garçom");
-            break;
+//         case 4:
+//             alert("Voce o garçom");
+//             break;
 
-        default:
-            alert("Escolha uma opção entre 1 a 4.");
-            break
-    }
+//         default:
+//             alert("Escolha uma opção entre 1 a 4.");
+//             break
+//     }
+// }
+
+
+// Condicionais
+var userOnline = false;
+
+if(userOnline === true) {
+    console.log("Usuário online!");
+} else {
+    console.log("Usuário offline!");
 }
+
+// Operador ternário
+var isDriver = true;
+
+isDriver === true ? console.log("É motorista") : console.log("Não é motorista");
