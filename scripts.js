@@ -197,33 +197,48 @@
 
 
 // OBJETOS
-let pessoa = {
-    nome: "Fulano",
-    idade: 23,
-    altura: 1.80,
-    cargo: "Programador"
-};
+// let pessoa = {
+//     nome: "Fulano",
+//     idade: 23,
+//     altura: 1.80,
+//     cargo: "Programador"
+// };
 
-console.log(pessoa);
-console.log(pessoa.nome);
-console.log(pessoa.cargo);
-
-
-let carro = {
-    marca: "Porsche",
-    modelo: "Taycan 4s",
-    cor: "Branco"
-}
-
-console.log(carro)
-console.log(carro.modelo);
+// console.log(pessoa);
+// console.log(pessoa.nome);
+// console.log(pessoa.cargo);
 
 
-// Array de objetos
-let users = [
-    {nome: "Kaic", cargo: "Programador", status: "Ativo"},
-    {nome: "Gabriela", cargo: "Backend", status: "Ativo"},
-    {nome: "Matheus", cargo: "RH", status: "Ativo"}
-]
+// let carro = {
+//     marca: "Porsche",
+//     modelo: "Taycan 4s",
+//     cor: "Branco"
+// }
 
-console.log(users)
+// console.log(carro)
+// console.log(carro.modelo);
+
+
+// // Array de objetos
+// let users = [
+//     {nome: "Kaic", cargo: "Programador", status: "Ativo"},
+//     {nome: "Gabriela", cargo: "Backend", status: "Ativo"},
+//     {nome: "Matheus", cargo: "RH", status: "Ativo"}
+// ]
+
+// console.log(users)
+
+
+
+// Templeate String
+let nome = "Kaic";
+let sobrenome = "Cesar";
+let idade = 23;
+
+// modo antigo:
+// let mensagem = "Meu nome é " + nome + " " + sobrenome + " e eu tenho " + idade + " anos de idade";
+
+// Dessa maneira é mais simples. Mas lembre de usar crases. 
+let mensagem = `Meu nome é ${nome} ${sobrenome} e eu tenho ${idade} anos de idade`
+
+console.log(mensagem)
