@@ -177,20 +177,53 @@
 
 
 // E01
-function acao() {
-    document.write("Executando... <br>")
+// function acao() {
+//     document.write("Executando... <br>")
+// }
+// setInterval(acao, 1000)
+
+// // E02
+// setInterval(() => {
+//     document.write("Executando... <br>")
+// }, 1000)
+
+
+// // SetTimeOut() --> Dispara somente uma vez
+// function acao() {
+//     document.write("Executando... <br>")
+// }
+
+// setTimeout(acao, 3000)
+
+
+// OBJETOS
+let pessoa = {
+    nome: "Fulano",
+    idade: 23,
+    altura: 1.80,
+    cargo: "Programador"
+};
+
+console.log(pessoa);
+console.log(pessoa.nome);
+console.log(pessoa.cargo);
+
+
+let carro = {
+    marca: "Porsche",
+    modelo: "Taycan 4s",
+    cor: "Branco"
 }
-setInterval(acao, 1000)
 
-// E02
-setInterval(() => {
-    document.write("Executando... <br>")
-}, 1000)
+console.log(carro)
+console.log(carro.modelo);
 
 
-// SetTimeOut() --> Dispara somente uma vez
-function acao() {
-    document.write("Executando... <br>")
-}
+// Array de objetos
+let users = [
+    {nome: "Kaic", cargo: "Programador", status: "Ativo"},
+    {nome: "Gabriela", cargo: "Backend", status: "Ativo"},
+    {nome: "Matheus", cargo: "RH", status: "Ativo"}
+]
 
-setTimeout(acao, 3000)
+console.log(users)
