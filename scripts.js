@@ -150,22 +150,47 @@
 
 
 // Data local
-var data = new Date()
-console.log(data);
+// var data = new Date()
+// console.log(data);
 
-console.log("Dia: " + data.getDate());
-console.log("Dia da semana: " + data.getDay());
-console.log("Mês: " + data.getMonth()+1)
-console.log("Ano: " + data.getFullYear())
-console.log("Hora atual: " + data.getHours());
-console.log("Minutos atual: " + data.getMinutes());
+// console.log("Dia: " + data.getDate());
+// console.log("Dia da semana: " + data.getDay());
+// console.log("Mês: " + data.getMonth()+1)
+// console.log("Ano: " + data.getFullYear())
+// console.log("Hora atual: " + data.getHours());
+// console.log("Minutos atual: " + data.getMinutes());
 
-console.log(data.getDate()+"/"+data.getMonth()+1+"/"+data.getFullYear());
+// console.log(data.getDate()+"/"+data.getMonth()+1+"/"+data.getFullYear());
 
-// Criando uma data
-var dataNova = new Date("March 22, 2018")
-console.log(dataNova)
+// // Criando uma data
+// var dataNova = new Date("March 22, 2018")
+// console.log(dataNova)
 
-// Aumentar data, horarios...
-var newData = dataNova.setDate(dataNova.getDate() + 5);
-var newHour = dataNova.setHours(dataNova.getHours() + 10);
+// // Aumentar data, horarios...
+// var newData = dataNova.setDate(dataNova.getDate() + 5);
+// var newHour = dataNova.setHours(dataNova.getHours() + 10);
+
+
+// Temporizadores
+
+// SetInterval --> vai executar em tempos em tempos mas infinitamente
+
+
+// E01
+function acao() {
+    document.write("Executando... <br>")
+}
+setInterval(acao, 1000)
+
+// E02
+setInterval(() => {
+    document.write("Executando... <br>")
+}, 1000)
+
+
+// SetTimeOut() --> Dispara somente uma vez
+function acao() {
+    document.write("Executando... <br>")
+}
+
+setTimeout(acao, 3000)
