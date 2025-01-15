@@ -73,3 +73,28 @@ function newUser(info) {
 }
 
 newUser({nome: "Kaic", sobrenome: "Cesar", cargo: "Full Stack Developer"});
+
+
+
+
+// Rest Operator ---------------------
+
+// Quando utilizamos esse método, significa que estamos solicitando ao parâmetro que receba os argumentos mas não sabemos quantos irá receber e ele trata como array
+function convidados(...nomes) {
+    console.log("Seja bem vindo todos convidados");
+    console.log(nomes)
+}
+convidados("Kaic", "Cesar", "Andrade", "Gabriela", "Steve");
+
+
+function sorteador(...numeros) {
+    console.log(numeros);
+
+    const num = Math.floor(Math.random() * numeros.length)
+    // Floor -> Deixe apenas numeros inteiros
+    // Random -> Sorteia aletorio
+
+    console.log(num); // Opcao 1
+    console.log("O numero gerado foi: ", numeros[num]); // Opcao 1
+}
+sorteador(1, 2, 3, 4, 5, 6, 7)
