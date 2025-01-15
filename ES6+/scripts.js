@@ -33,3 +33,43 @@ console.log(segundoNome);
 
 
 
+
+// Spread Operator ---------------------
+
+// Nesse exemplo, queremos adicionar os valores de um Array dentro de outro Array
+let primeiros = [1, 2, 3];
+
+//let numeros = [primeiros, 4, 5, 10]; // Dessa forma não irá funcionar, pois estamos passando O ARRAY e não OS VALORES DO ARRAY
+let numeros = [...primeiros, 4, 5, 10]; // ... --> Spread = passa os valores
+console.log(numeros) 
+
+
+// Spread em objetos ---------------------
+let car = {
+    marca: "Porsche",
+    modelo: "Taycan",
+    ano: 2024
+}
+
+let disponibilidade = {
+    ...car, // Spread
+    cor: "Branco",
+    cidade: "Goiânia"
+}
+
+console.log(disponibilidade)
+
+
+// Outro exemplo
+
+function newUser(info) {
+    let data = {
+        ...info,
+        status: "Ativo",
+        matricula: "112"
+    };
+
+    console.log(data)
+}
+
+newUser({nome: "Kaic", sobrenome: "Cesar", cargo: "Full Stack Developer"});
