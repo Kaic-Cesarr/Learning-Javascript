@@ -98,3 +98,31 @@ function sorteador(...numeros) {
     console.log("O numero gerado foi: ", numeros[num]); // Opcao 1
 }
 sorteador(1, 2, 3, 4, 5, 6, 7)
+
+
+
+// Operações em Array 
+// MAP -> Percorret todo o array
+
+let lista = ["Kaic", "Jose", "Matheus"];
+
+lista.map((item, index) => { 
+    console.log(`Passando ${item} - esta na posição: ${index}`);
+})
+
+
+// Reduce -> Busca reduzir um aray
+
+let numbers = [52, 3, 2];
+let total = numbers.reduce((acumulador, numero, indice, original) => {
+    console.log(`${acumulador} total até o momento`);
+    console.log(`${numero} valor atual`);
+    console.log(`${indice} posição`);
+    console.log(`${original} array original`);
+
+    console.log("------------------------")
+
+    return acumulador += numero
+})  
+
+console.log(`Total do reduce: ${total}`);
