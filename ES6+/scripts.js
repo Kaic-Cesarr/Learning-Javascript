@@ -145,3 +145,35 @@ let result = palavras.filter((item) => {
 })
 
 console.log(result)
+
+
+
+// Funções anônimas ---------------------
+
+/* 
+    () => {}
+
+    1 - Os parênteses, que é por onde a função recebe os argumentos (assim como nas funções tradicionais)
+    2 - Arrow =>
+    3 - Chaves, o bloco de código que representa o corpo da função
+
+*/
+// Padrão
+function somar(a, b) {
+    let total = a + b
+    return console.log(total);
+}
+somar(13, 9);
+
+// Anônima
+let subtrair = (a, b) => {
+    let total = a - b
+    console.log(total);
+}
+subtrair(8, 5)
+
+// Exemplo
+let nums = [1, 4, 2, 56, 9];
+nums.map((item) => { 
+    console.log(item)
+});
