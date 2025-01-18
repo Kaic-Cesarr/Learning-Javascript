@@ -177,3 +177,21 @@ let nums = [1, 4, 2, 56, 9];
 nums.map((item) => { 
     console.log(item)
 });
+
+
+
+// Includes ----- verificar se existe um elemento e ele retorna um bool
+let firstNames = ["Kaic", "Jose", "Joao"];
+console.log(firstNames.includes("Kaic"));
+
+
+// StarsWith -- Verifica se a condição é verdadeira
+let n = "Kaic"
+console.log(n.startsWith("Ka"));
+console.log(n.startsWith("Ks"));
+
+
+// EndWith -- Verifica se a condição é verdadeira
+let team = "Barcelona"
+console.log(team.endsWith("ona"));
+console.log(team.endsWith("onna"));
