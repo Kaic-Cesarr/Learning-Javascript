@@ -102,8 +102,8 @@ sorteador(1, 2, 3, 4, 5, 6, 7)
 
 
 // Operações em Array 
-// MAP -> Percorret todo o array
 
+// MAP -> Percorret todo o array
 let lista = ["Kaic", "Jose", "Matheus"];
 
 lista.map((item, index) => { 
@@ -112,7 +112,6 @@ lista.map((item, index) => {
 
 
 // Reduce -> Busca reduzir um aray
-
 let numbers = [52, 3, 2];
 let total = numbers.reduce((acumulador, numero, indice, original) => {
     console.log(`${acumulador} total até o momento`);
@@ -123,6 +122,26 @@ let total = numbers.reduce((acumulador, numero, indice, original) => {
     console.log("------------------------")
 
     return acumulador += numero
-})  
-
+}) 
 console.log(`Total do reduce: ${total}`);
+
+
+//  Find -> Buscar algo
+let listagem = [5, 3, "Jose", 1, "Kaic"];
+
+let busca = listagem.find((item) => {
+    if(item === "Kaic") {
+        return console.log("Item encontrado com sucesso.")
+    }
+});
+console.log(busca);
+
+
+// Filter -> Filtrar
+let palavras = ["Apple", "Meta", "X", "Youtube"];
+
+let result = palavras.filter((item) => {
+    return item.length < 6;
+})
+
+console.log(result)
