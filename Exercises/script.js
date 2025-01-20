@@ -24,6 +24,7 @@ function enterButton() {
 
     bodyElement.appendChild(resultElement);
     resultElement.appendChild(resultText);
+
 }
 
 
